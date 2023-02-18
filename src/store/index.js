@@ -26,7 +26,7 @@ const counterSlice = createSlice({
     }
 })
 
-const authenticationSlice = createSlice({
+const authSlice = createSlice({
     name: 'authentication',
     initialState: initialAuthState,
     reducers: {
