@@ -1,4 +1,4 @@
-import { createSlice, configureStore } from '@reactjs/toolkit'
+import { createSlice, configureStore } from '@reduxjs/toolkit'
 
 const initialState = { counter: 0, showCounter: true }
 
