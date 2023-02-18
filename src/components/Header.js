@@ -3,6 +3,8 @@ import classes from './Header.module.css';
 
 const Header = () =>
 {
+  const isAuth = useSelector((state) => state.auth.isAuthenticated)
+
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
@@ -14,9 +16,9 @@ const Header = () =>
           <li>
             <a href='/'>My Sales</a>
           </li>
-          <li>
+          {isAuth && <li>
             <button>Logout</button>
-          </li>
+          </li>}
         </ul>
       </nav>
     </header>
