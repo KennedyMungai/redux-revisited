@@ -1,3 +1,5 @@
+import { useDispatch } from 'react-redux';
+import { authActions } from '../store';
 import classes from './Auth.module.css';
 
 const Auth = () =>
@@ -5,6 +7,8 @@ const Auth = () =>
   const loginHandler = (e) =>
   {
     e.preventDefault()
+
+
   }
 
   return (
