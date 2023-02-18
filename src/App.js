@@ -11,7 +11,8 @@ function App()
   return (
     <>
       <Header />
-      <Auth />
+      {!isAuth && <Auth />}
+      {isAuth && <UserProfile />}
       <Counter />
     </>
   );
