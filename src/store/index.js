@@ -29,4 +29,6 @@ const store = configureStore({
     reducer: counterSlice.reducer
 })
 
+const counterActions = counterSlice.actions
+
 export default store;
