@@ -30,11 +30,11 @@ const authenticationSlice = createSlice({
     name: 'authentication',
     initialState: initialAuthState,
     reducers: {
-        login()
+        login(state)
         {
 
         },
-        logout()
+        logout(state)
         {
 
         }
