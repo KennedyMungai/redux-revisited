@@ -6,8 +6,14 @@ createSlice({
     name: 'counter',
     initialState,
     reducers: {
-        increment() { },
-        decrement() { },
+        increment(state)
+        {
+            state.counter++
+        },
+        decrement(state)
+        {
+            state.counter--
+        },
         increase() { },
         toggleCounter() { }
     }
