@@ -8,6 +8,20 @@ const Counter = () =>
 
   const toggleCounterHandler = () => { };
 
+  const incrementHandler = () => 
+  {
+    dispatch({
+      type: 'increment'
+    })
+  }
+
+  const decrementHandler = () => 
+  {
+    dispatch({
+      type: 'decrement'
+    })
+  }
+
   return (
     <main className={classes.counter}>
       <h1>Redux Counter</h1>
