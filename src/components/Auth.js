@@ -10,7 +10,7 @@ const Auth = () =>
   {
     e.preventDefault()
 
-
+    dispatch(authActions.login())
   }
 
   return (
