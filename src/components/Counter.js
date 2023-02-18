@@ -6,7 +6,7 @@ const Counter = () =>
   const dispatch = useDispatch()
   const counter = useSelector(state => state.counter)
 
-  let amount = 5
+  let amount = 6
 
   const toggleCounterHandler = () => { };
 
