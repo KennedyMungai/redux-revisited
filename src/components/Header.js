@@ -24,7 +24,7 @@ const Header = () =>
           <li>
             <a href='/'>My Sales</a>
           </li>
-          && <li>
+          <li>
             <button onClick={logoutHandler}>Logout</button>
           </li>
         </ul>
