@@ -12,31 +12,22 @@ const Counter = () =>
 
   const toggleCounterHandler = () =>
   {
-    dispatch({
-      type: 'toggle'
-    })
+    dispatch(counterActions.toggleActions())
   };
 
   const incrementHandler = () => 
   {
-    dispatch({
-      type: 'increment'
-    })
+    dispatch(counterActions.increment())
   }
 
   const decrementHandler = () => 
   {
-    dispatch({
-      type: 'decrement'
-    })
+    dispatch(counterActions.decrement())
   }
 
   const increaseHandler = () =>
   {
-    dispatch({
-      type: 'increase',
-      amount
-    })
+    dispatch(counterActions.increase(amount))
   }
 
   return (
