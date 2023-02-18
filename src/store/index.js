@@ -25,6 +25,6 @@ const counterSlice = createSlice({
     }
 })
 
-// const store = createStore(counterReducer)
+const store = createStore(counterSlice.reducer)
 
-// export default store;
+export default store;
