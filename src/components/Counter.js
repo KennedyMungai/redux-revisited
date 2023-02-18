@@ -12,7 +12,7 @@ const Counter = () =>
 
   const toggleCounterHandler = () =>
   {
-    dispatch(counterActions.toggleActions())
+    dispatch(counterActions.toggleCounter())
   };
 
   const incrementHandler = () => 
