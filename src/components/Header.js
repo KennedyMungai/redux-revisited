@@ -6,6 +6,8 @@ const Header = () =>
 {
   const isAuth = useSelector((state) => state.auth.isAuthenticated)
 
+  const dispatch = useDispatch()
+
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
