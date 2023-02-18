@@ -2,6 +2,17 @@ import { createSlice } from '@reactjs/toolkit'
 
 const initialState = { counter: 0, showCounter: true }
 
+createSlice({
+    name: 'counter',
+    initialState,
+    reducers: {
+        increment() { },
+        decrement() { },
+        increase() { },
+        toggleCounter() { }
+    }
+})
+
 const counterReducer = (state = initialState, action) => 
 {
     if (action.type === 'increment')
