@@ -19,4 +19,4 @@ const counterReducer = (state = { counter: 0 }, action) =>
     return state
 }
 
-const store = createStore()
+const store = createStore(counterReducer)
