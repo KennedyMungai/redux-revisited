@@ -8,7 +8,7 @@ const Header = () =>
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
-      <nav>
+      {isAuth && <nav>
         <ul>
           <li>
             <a href='/'>My Products</a>
@@ -16,12 +16,12 @@ const Header = () =>
           <li>
             <a href='/'>My Sales</a>
           </li>
-          {isAuth && <li>
+          && <li>
             <button>Logout</button>
-          </li>}
+          </li>
         </ul>
-      </nav>
-    </header>
+      </nav>}
+    </header >
   );
 };
 
